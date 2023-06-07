@@ -74,8 +74,8 @@
                     <td>{{ $info->name }}</td>
                     <td>{{ $info->address }}</td>
                     <td>{{ $info->commercial_record }}</td>
-                    <td>{{ $info->Tex_number }}</td>
                     <td>{{ $info->phone }}</td>
+                    <td>{{ $info->Tex_number }}</td>
                     <td>{{ $info->name_of_deficience }}</td>
                     <td>{{ $info->phone_deficince }}</td>
                     <td>{{ $info->service_ratio }}</td>

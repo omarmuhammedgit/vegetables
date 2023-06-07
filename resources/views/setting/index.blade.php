@@ -33,7 +33,13 @@
     <div class="col-12">
       <div class="card">
         <div class="card-header ">
+            @if (@empty($data))
             <a href="{{ route('Setting.create') }}" class="btn btn-success">اضافة</a>
+
+            @else
+            <a href="{{ route('Setting.edit',$data['id']) }}" class="btn btn-success">تعديل</a>
+
+            @endif
           <h3 class="card-title card_title_center" >عرض  بيانات  الاعدادات</h3>
         </div>
         <!-- /.card-header -->
@@ -120,7 +126,7 @@
                             <td colspan="2">نسبة الخدمة الافتراضية   </td>
                         </tr>
                         <tr>
-                            <td class="width30">اسم الضريبة  </td>
+                            <td class="width30">نسبة الخدمة   </td>
                             <td>{{ $data['service_rote'] }}</td>
                         </tr>
                         <tr>

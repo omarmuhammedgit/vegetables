@@ -27,9 +27,6 @@
                 <div class="card-header">
                     <h3 class="card-title card_title_center">عرض عمليات البيع  العميل </h3>
                 </div>
-
-                <input type="hidden" id="ajax_search_url" value="{{ route('invoiceSuppler.addCustomerAjax') }}">
-                <input type="hidden" id="token_search" value="{{ csrf_token() }}">
                 <!-- /.card-header -->
                 <div class="card-body"  id="print">
 
@@ -78,8 +75,6 @@
                 <!-- /.row -->
 
               <!-- /.invoice -->
-                    <form action="{{ route('invoiceSuppler.store') }}" method="post">
-                        @csrf
 
                         <br><br>
                         <div class="row addCustomerAjax">
@@ -174,7 +169,6 @@
                                 </div>
                                 <!-- /.col (right) -->
                             </div>
-                    </form>
                 </div>
                 <div class="form-group text-center" id="hideButton" >
                     <button type="click" class="btn btn-primary btn-sm" id="printInvoice"> طباعة </button>

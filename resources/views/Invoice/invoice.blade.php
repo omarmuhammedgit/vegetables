@@ -216,67 +216,12 @@
 
                             </div>
                             <!-- /.col (left) -->
-                            {{-- <div class="col-md-6">
-                                <div class="card card-primary">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Date picker</h3>
-                                        <h4>ملخص الدفع</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="col-md-12">
-                                            <label for="">اجمالي الكميات </label>
-                                            <input type="text" class="form-control" name="total_quantity"
-                                                id="total_quantity" value="{{ old('total_quantity') }}">
-                                            @error('total_quantity')
-                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label for="">اجمالي غير شامل الضريبة القيمة المضافة </label>
-                                            <input type="text" class="form-control" name="total_not_include_tex"
-                                                id="total_not_include_tex" value="{{ old('total_not_include_tex') }}">
-                                            @error('total_not_include_tex')
-                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label for="">اجمالي الخصم </label>
-                                            <input type="text" class="form-control" name="total_discount"
-                                                id="total_discount" value="{{ old('total_discount') }}">
-                                            @error('total_discount')
-                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label for="">اجمالي الضريبة القيمة المضافة </label>
-                                            <input type="text" class="form-control" name="total_include_tex"
-                                                id="total_include_tex" value="{{ old('total_include_tex') }}">
-                                            @error('total_include_tex')
-                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label for="">اجمالي شامل ضريبة القيمة المضافة </label>
-                                            <input type="text" class="form-control" name="total_tex_suppler"
-                                                id="total_tex_suppler" value="{{ old('total_tex_suppler') }}">
-                                            @error('total_tex_suppler')
-                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
-                                        </div>
-
-                                        <!-- /.card-body -->
-                                    </div>
-                                    <!-- /.card -->
-
-                                </div>
-                                <!-- /.col (right) -->
-                            </div> --}}
 
 
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-primary btn-sm"> حفظ</button>
-                            <button type="button" class="btn btn-success btn-sm" id="addCustomer"> اضافة عميل</button>
+                            <button type="button" class="btn btn-success btn-sm" id="addCustomer"> اضافة طلب</button>
                         </div>
                     </form>
                     <div class="form-group text-center">

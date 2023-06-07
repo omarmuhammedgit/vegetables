@@ -124,6 +124,7 @@
                         </div>
                         <div class="form-group text-center">
                         <button type="submit" class="btn btn-primary btn-sm"> تعديل</button>
+                        <a href="{{ route('customer.index') }}" class="btn btn-info btn-sm"> الالغاء</a>
                         </div>
                     </form>
                 </div>

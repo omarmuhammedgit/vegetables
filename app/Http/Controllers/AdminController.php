@@ -38,7 +38,7 @@ class AdminController extends Controller
                 if ($data) {
                     return redirect()->back()->with('error','عفوا اسم  المستخدم مسجل من قبل')->withInput();
                 }
-                $data_insert['com-code']=$request->com_code;
+                $data_insert['com_code']=$request->com_code;
                 $data_insert['name']=$request->name;
                 $data_insert['email']=$request->email;
                 $data_insert['username']=$request->username;
@@ -69,7 +69,7 @@ class AdminController extends Controller
                 if ($data) {
                     return redirect()->back()->with('error','عفوا اسم  المستخدم مسجل من قبل')->withInput();
                 }
-                $data_update['com-code']=$request->com_code;
+                $data_update['com_code']=$request->com_code;
                 $data_update['name']=$request->name;
                 $data_update['email']=$request->email;
                 if ($request->password !='') {
@@ -78,7 +78,7 @@ class AdminController extends Controller
                 $data_update['username']=$request->username;
                 $data_update['status']=$request->status;
                 Admin::find($request->id)->update($data_update);
-                return redirect()->route('user.index')->with('add','تمت اضافة المستخدم بنجاح');
+                return redirect()->route('user.index')->with('add','تمت تحديث المستخدم بنجاح');
     }
         } catch (\Exception $ex) {
             return redirect()->back()->with('error','عفوا حدث خطا ما'.$ex->getMessage())->withInput();

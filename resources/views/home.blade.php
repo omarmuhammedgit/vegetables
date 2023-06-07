@@ -219,8 +219,7 @@ test title
                                         <td>{{ $info->date }}</td>
                                         <td>{{ $info->escort_expenses + $info->other_expenses}}</td>
                                         <td>
-                                            <a href="{{ route('Suppler.edit', $info->id) }}" class="btn btn-info"> تعديل</a>
-                                            <a href="" class="btn btn-danger">حذف</a>
+                                            {{--   --}}
                                         </td>
                                     </tr>
                                     @php

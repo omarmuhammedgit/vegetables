@@ -73,17 +73,25 @@ class SettingController extends Controller
                 return redirect()->back()->with('error','عفوا اسم المورد مسجل من قبل')->withInput();
             }
             $data_update['name']=$request->name;
-            $data_update['code']=$request->code;
+            $data_update['com_code']=$com_code;
+            $data_update['phone2']=$request->phone2;
+            $data_update['sup_code']=$request->sup_code;
+            $data_update['no_tex']=$request->no_tex;
+            $data_update['no_recode']=$request->no_recode;
+            $data_update['cust_code']=$request->cust_code;
+            $data_update['inv_code']=$request->inv_code;
+            $data_update['email']=$request->email;
+            $data_update['catch_code']=$request->catch_code;
             $data_update['phone']=$request->phone;
             $data_update['address']=$request->address;
-            $data_update['Tex_number']=$request->Tex_number;
-            $data_update['commercial_record']=$request->commercial_record;
-            $data_update['name_of_deficience']=$request->name_of_deficience;
-            $data_update['phone_deficince']=$request->phone_deficince;
-            $data_update['service_ratio']=$request->service_ratio;
-            $data_update['custom_field_1']=$request->custom_field_1;
-            $data_update['custom_field_2']=$request->custom_field_2;
-            $data_update['custom_field_3']=$request->custom_field_3;
+            $data_update['suport_code']=$request->suport_code;
+            $data_update['pro_code']=$request->pro_code;
+            $data_update['added_by']=auth()->user()->name;
+            $data_update['name_tex']=$request->name_tex;
+            $data_update['tex_rote']=$request->tex_rote;
+            $data_update['service_rote']=$request->service_rote;
+            $data_update['custom_fiald_1']=$request->custom_field_1;
+            $data_update['custom_fiald_2']=$request->custom_field_2;
 
             $flag=Setting::find($request->id)->where('com_code',$com_code)->update($data_update);
             if($flag){

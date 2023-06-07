@@ -140,7 +140,7 @@ class CustomerController extends Controller
             ])->render();
 
         } else {
-            $displayQRCodeAsBase64=[];
+            $displayQRCodeAsBase64=1;
 
         }
 
